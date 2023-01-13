@@ -1,0 +1,334 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Alex+Brush&family=Assistant&family=Cormorant+Garamond&family=Cormorant+Upright&family=Italianno&family=Laila&family=Literata:opsz@7..72&family=Lora&family=Parisienne&family=Petit+Formal+Script&family=Pontano+Sans&family=Prata&family=Rochester&family=Tangerine:wght@700&family=Taviraj&display=swap);
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+html,
+body,
+header {
+    height: 133%;
+    width: 100%;
+    background-color: rgb(255, 255, 239);
+}
+
+/* Header */
+header {
+    height: 150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5)), url(../images/didi-miam-6otukgGzRI4-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 110%;
+}
+
+h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+}
+
+/* Nav */
+nav {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 230, 194);
+    gap: 3em;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+/* MAIN */
+main {
+    padding: 1em;
+    margin: auto;
+}
+
+h2 {
+    font-size: 42px;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+
+h3 {
+    width: 40%;
+    font-family: 'Cormorant Upright', serif;
+}
+
+main p {
+    font-size: 20px;
+    padding: 0.5em;
+    width: 60%;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.25em;
+}
+
+main li {
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+.menu {
+    width: 60%;
+    margin: auto;
+    background-color: rgb(189, 230, 194);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.intro {
+    padding: 2em 0em 1em 0em;
+}
+
+.intro h2 {
+    font-size: 32px;
+    text-decoration: none;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.intro p {
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+
+#cakeSection {
+    padding: 1em;
+}
+
+#cakeSection h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#cakeSection div {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dotted;
+    border-color: rgb(159, 192, 163);
+}
+
+#centerP {
+    margin: auto;
+    text-align: center;
+}
+
+section ul {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px dotted;
+    border-color: rgb(159, 192, 163);
+    padding-bottom: 1em;
+    font-family: 'Cormorant Upright', serif;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.gluten {
+    margin: auto;
+    padding: 2em 2em 0em 2em;
+    font-size: 17px;
+}
+
+.gluten p {
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(189, 230, 194);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    margin: 1em;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: right;
+}
+
+.info li {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 0.5em;
+    padding-right: 1em;
+}
+
+footer img {
+    width: 40px;
+}
+
+.sm {
+    display: flex;
+}
+
+.sm li {
+    padding: 1em;
+}
+
+.copyright {
+    font-style: italic;
+    padding-top: 1.8em;
+    padding-left: 1em;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* SCREENS 750px AND DOWN */
+@media screen and (max-width: 750px) {
+
+    header {
+        height: 8%;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav:before {
+        content: "MENU";
+        font-family: 'Cormorant Garamond', serif;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        padding: 1em;
+        background-color: rgb(189, 230, 194, 0.8);
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -9999px;
+        gap: 0;
+    }
+
+    nav:hover ul {
+        top: 45px;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .menu {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    #cakeSection h3 {
+        font-size: 18px;
+    }
+
+    #cakeSection p {
+        font-size: 15px;
+    }
+
+    #cakeSection li {
+        font-size: 18px;
+    }
+
+    .gluten {
+        font-size: 15px;
+    }
+
+    .gluten p {
+        font-size: 12px;
+    }
+
+    .info li {
+        font-size: 8px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .sm li {
+        padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+
+    .copyright {
+        font-size: 8px;
+        padding-top: 1.13em;
+    }
+}

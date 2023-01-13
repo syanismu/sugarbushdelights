@@ -1,0 +1,591 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Alex+Brush&family=Assistant&family=Cormorant+Garamond&family=Cormorant+Upright&family=Italianno&family=Laila&family=Literata:opsz@7..72&family=Lora&family=Parisienne&family=Petit+Formal+Script&family=Pontano+Sans&family=Prata&family=Rochester&family=Tangerine:wght@700&family=Taviraj&display=swap);
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+html,
+body,
+header {
+    height: 133%;
+    width: 100%;
+    background-color: rgb(255, 255, 239);
+}
+
+/* Header */
+header {
+    height: 24.25%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5)), url(../images/didi-miam-6otukgGzRI4-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+}
+
+/* Nav */
+nav {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 230, 194);
+    gap: 3em;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+/* Main Description */
+main {
+    width: 100%;
+}
+
+.main-desc {
+    margin-top: 2em;
+}
+
+h1 {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Italianno', cursive;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+}
+
+.main-desc p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* Cake Section */
+.cakes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.cakes h2 {
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
+    padding-bottom: 0.25em;
+}
+
+.cakes img {
+    display: flex;
+    width: 250px;
+    border: 10px solid;
+    border-color: rgb(189, 230, 194);
+    border-radius: 0.5em;
+    transition: 0.5s;
+    margin-bottom: 0.5em;
+}
+
+.cakes a:hover img {
+    transform: scale(1.05);
+}
+
+/* Media Section */
+.title {
+    font-size: 30px;
+    background-color: rgb(189, 230, 194);
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.media h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cormorant Upright', serif;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+}
+
+.media h3 img {
+    width: 25px;
+    border: none;
+    margin: auto;
+    text-align: center;
+}
+
+.media img {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    border: 10px solid;
+    border-color: rgb(189, 230, 194);
+    border-radius: 0.5em;
+}
+
+.media cite {
+    font-size: 10px;
+    position: relative;
+    bottom: 15px;
+    left: 170px;
+}
+
+.media p {
+    text-align: center;
+    width: 250px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    margin: auto;
+}
+
+.media a:hover {
+    color: rgb(12, 114, 24);
+}
+
+/* Associations section */
+.associations {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.associations h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cormorant Upright', serif;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+}
+
+.associations img {
+    height: 400px;
+    border: 10px solid;
+    border-color: rgb(189, 230, 194);
+    border-radius: 0.5em;
+    margin: 0 3em 2em 3em;
+}
+
+.associations p {
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.25em;
+    text-align: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.associations a:hover {
+    color: rgb(12, 114, 24);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(189, 230, 194);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+footer div {
+    margin: 1em;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: right;
+}
+
+.info li {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 0.5em;
+    padding-right: 1em;
+}
+
+footer img {
+    width: 40px;
+}
+
+.sm {
+    display: flex;
+}
+
+.sm li {
+    padding: 1em;
+}
+
+.copyright {
+    font-style: italic;
+    padding-top: 1.8em;
+    padding-left: 1em;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* BIG SCREENS 1380px and down*/
+@media screen and (max-width: 1380px) {
+
+    header {
+        height: 18%;
+    }
+
+    .media {
+        margin-top: 1em;
+    }
+
+    .media h3 {
+        font-size: 18px;
+    }
+
+    .media h3 img {
+        font-size: 18px;
+    }
+
+    .media img {
+        width: 200px;
+    }
+
+    .media cite {
+        left: 140px;
+    }
+
+    .media p {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .associations img {
+        height: 345px;
+    }
+
+    .associations p {
+        font-size: 19px;
+    }
+}
+
+/* MEDIUM-BIG SCREENS 1280px and down */
+@media screen and (max-width: 1280px) {
+
+    .main-desc p {
+        text-align: center;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .associations img {
+        height: 290px;
+    }
+
+    .associations p {
+        font-size: 18px;
+    }
+
+    .media cite {
+        left: 120px;
+    }
+}
+
+/* MEDIUM SCREENS 1150px and down */
+@media screen and (max-width: 1150px) {
+    header {
+        height: 16%;
+    }
+
+    nav ul li {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .main-desc p {
+        font-size: 18px;
+    }
+
+    .cakes h2 {
+        font-size: 33px;
+    }
+
+    .cakes img {
+        width: 175px;
+    }
+
+    .media h3 {
+        font-size: 15px;
+    }
+
+    .media h3 img {
+        font-size: 15px;
+    }
+
+    .media img {
+        width: 150px;
+    }
+
+    .media p {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .media cite {
+        bottom: 15px;
+        left: 70px;
+    }
+
+    .associations {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #cbb {
+        order: 1;
+    }
+
+    #p {
+        order: 3;
+        width: 80%;
+    }
+
+    #ggn {
+        order: 2;
+    }
+
+    .associations img {
+        height: 250px;
+    }
+
+    .associations p {
+        font-size: 18px;
+    }
+
+    .info li {
+        font-size: 17px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    .copyright {
+        font-size: 17px;
+    }
+}
+
+/* SMALL-MEDIUM SCREENS 860px down*/
+@media screen and (max-width: 860px) {
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .main-desc p {
+        font-size: 17px;
+    }
+
+    .cakes h2 {
+        font-size: 30px;
+    }
+
+    .cakes img {
+        width: 125px;
+    }
+
+    .media h3 {
+        font-size: 12px;
+    }
+
+    .media h3 img {
+        font-size: 12px;
+    }
+
+    .media img {
+        width: 125px;
+    }
+
+    .media p {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .media cite {
+        bottom: 15px;
+        left: 50px;
+        font-size: 8px;
+    }
+
+    .associations img {
+        height: 200px;
+    }
+
+    .associations p {
+        font-size: 16px;
+    }
+}
+
+/* SMALL SCREENS 708px and down */
+@media screen and (max-width: 708px) {
+
+    header {
+        height: 8%;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav:before {
+        content: "MENU";
+        font-family: 'Cormorant Garamond', serif;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        padding: 1em;
+        background-color: rgb(189, 230, 194, 0.8);
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -9999px;
+        gap: 0;
+    }
+
+    nav:hover ul {
+        top: 45px;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .main-desc p {
+        font-size: 14px;
+    }
+
+    .cakes {
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .cakes h2 {
+        font-size: 24px;
+    }
+
+    .cakes img {
+        width: 125px;
+    }
+
+    .media {
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .associations h3 {
+        font-size: 20px;
+    }
+
+    .associations img {
+        height: 100px;
+        margin: 0 1em 0.5em 1em;
+    }
+
+    .associations p {
+        font-size: 12px;
+    }
+
+    .info li {
+        font-size: 8px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .sm li {
+        padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+
+    .copyright {
+        font-size: 8px;
+        padding-top: 1.13em;
+    }
+}

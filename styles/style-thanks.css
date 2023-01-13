@@ -1,0 +1,211 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Alex+Brush&family=Assistant&family=Cormorant+Garamond&family=Cormorant+Upright&family=Italianno&family=Laila&family=Literata:opsz@7..72&family=Lora&family=Parisienne&family=Petit+Formal+Script&family=Pontano+Sans&family=Prata&family=Rochester&family=Tangerine:wght@700&family=Taviraj&display=swap);
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+html, body, header {
+    height: 72.5%;
+    width: 100%;
+    background-color: rgb(255, 255, 239);
+}
+
+/* Header */
+header {
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255,255,255,0.5)), url(../images/didi-miam-6otukgGzRI4-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+}
+
+/* Nav */
+nav {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 230, 194);  
+    gap: 3em;
+
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+h1, h2 {
+    font-size: 110px;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+    margin-top: 0.25em;
+}
+
+main p {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 0.25em;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 0.5em;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(189, 230, 194); 
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    margin: 1em;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: right;
+}
+
+.info li {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 0.5em;
+    padding-right: 1em;
+}
+
+footer img {
+    width: 40px;
+}
+
+.sm {
+    display: flex;
+}
+
+.sm li {
+    padding: 1em;
+}
+
+.copyright {
+    font-style: italic;
+    padding-top: 1.8em;
+    padding-left: 1em;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* SCREENS 850px AND DOWN */
+@media screen and (max-width: 850px) {
+
+    header {
+        height: 8%;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav:before {
+        content: "MENU";
+        font-family: 'Cormorant Garamond', serif;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        padding: 1em;
+        background-color: rgb(189, 230, 194, 0.8);
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -9999px;
+        gap: 0;
+    }
+
+    nav:hover ul {
+        top: 45px;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    .info li {
+        font-size: 8px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .sm li {
+        padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+
+    .copyright {
+        font-size: 8px;
+        padding-top: 1.13em;
+    }
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - Sugarbush Delights</title>
+    <link rel="stylesheet" href="./styles/style-order.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo-submark-black.png" alt="Sugarbush Delights logo">
+        <h1>Order Now</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./order.html">Order Now</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="./thanks.html">
+            <div class="form" id="makeResponsive">
+                <fieldset>
+                    <div>
+                        <p>
+                            <label for="firstName">First Name:</label><br>
+                            <input type="text" name="firstName" id="firstName">
+                        </p>
+
+                        <p>
+                            <label for="lastName">Last Name:</label><br>
+                            <input type="text" name="lastName" id="lastName">
+                        </p>
+                    </div>
+
+                    <div>
+                        <p>
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email" id="email">
+                        </p>
+
+                        <p>
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" name="phone" id="phone">
+                        </p>
+                    </div>
+                </fieldset>
+
+                <div class="firstSection">
+                    <fieldset>
+                        <legend>Order Type</legend>
+                        <select name="orderType" id="orderType">
+                            <option value="cake">Cake</option>
+                            <option value="cupcakes">Cupcakes</option>
+                            <option value="cakeTasting">Cake Tasting</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <p>
+                            <label for="dateOfCelebration">Date of Celebration or Cake Tasting</label><br>
+                            <input type="date" name="dateOfCelebration" id="dateOfCelebration">
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Celebration Type</legend>
+                        <select name="celebrationType" id="celebrationType">
+                            <option value="wedding">Wedding</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="graduation">Graduation</option>
+                            <option value="holiday">Holiday</option>
+                            <option value="babyShower">Baby Shower</option>
+                            <option value="bridalShower">Bridal Shower</option>
+                            <option value="communion">Communion</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <legend>Other:</legend>
+                        <input type="text" name="celebrationTypeOther">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="form" id="servingSizes">
+                <fieldset>
+                    <legend class="title">Cake Serving Size</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="oneTier12Servings" id="oneTier12Servings"
+                                value="oneTier12Servings">
+                            <label for="oneTier"><img src="./images/1-tier-12-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="oneTier24Servings" id="oneTier24Servings"
+                                value="oneTier24Servings">
+                            <label for="oneTier"><img src="./images/1-tier-24-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="oneTier32Servings" id="oneTier32Servings"
+                                value="oneTier32Servings">
+                            <label for="oneTier"><img src="./images/1-tier-32-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="oneTier38Servings" id="oneTier38Servings"
+                                value="oneTier38Servings">
+                            <label for="oneTier"><img src="./images/1-tier-38-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="oneTier54Servings" id="oneTier54Servings"
+                                value="oneTier54Servings">
+                            <label for="oneTier"><img src="./images/1-tier-54-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="twoTier36Servings" id="twoTier36Servings"
+                                value="twoTier36Servings">
+                            <label for="oneTier"><img src="./images/2-tier-36-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="twoTier44Servings" id="twoTier44Servings"
+                                value="twoTier44Servings">
+                            <label for="oneTier"><img src="./images/2-tier-44-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="twoTier64Servings" id="twoTier64Servings"
+                                value="twoTier64Servings">
+                            <label for="oneTier"><img src="./images/2-tier-64-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="threeTier75Servings" id="threeTier75Servings"
+                                value="threeTier75Servings">
+                            <label for="oneTier"><img src="./images/3-tier-75-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="threeTier100Servings" id="threeTier100Servings"
+                                value="threeTier100Servings">
+                            <label for="oneTier"><img src="./images/3-tier-100-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="fourTiers127Servings" id="fourTiers127Servings"
+                                value="fourTiers127Servings">
+                            <label for="oneTier"><img src="./images/4-tier-127-servings.jpg"></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="fiveTiers200Servings" id="fiveTiers200Servings"
+                                value="fiveTiers200Servings">
+                            <label for="oneTier"><img src="./images/5-tier-200-servings.jpg"></label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="title">Cupcake Serving Size</legend>
+                    <select name="cupcakeServings" id="cupcakeServings">
+                        <option value="noCupcakes">0</option>
+                        <option value="twelveCupcakes">12</option>
+                        <option value="twentyFourCupcakes">24</option>
+                        <option value="tirtySixCupcakes">36</option>
+                        <option value="fourtyEightCupcakes">48</option>
+                        <option value="sixtyCupcakes">60</option>
+                        <option value="seventyTwoCupcakes">72</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div class="form">
+                <fieldset>
+                    <legend class="title">Cake Flavours</legend>
+                    <p>Select one flavour for 1 tier, 1-2 flavours for 2 tiers, 1-3 flavours for 3 tiers, 1-4 flavours
+                        for 4 tiers, and 1-5 flavours for 5 tiers.</p>
+                    <p>For cupcakes, select chocolate or vanilla. If you have 24+ cupcakes, you can select both</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="chocolate" id="chocolate" value="chocolate">
+                            <label for="chocolate">Chocolate</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="vanilla" id="vanilla" value="vanilla">
+                            <label for="vanilla">Vanilla</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="lemonRaspberry" id="lemonRaspberry" value="lemonRaspberry">
+                            <label for="lemonRaspberry">Lemon Raspberry</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="strawberryShortcake" id="strawberryShortcake"
+                                value="strawberryShortcake">
+                            <label for="strawberryShortcake">Strawberry Shortcake</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="frenchVanilla" id="frenchVanilla" value="frenchVanilla">
+                            <label for="frenchVanilla">French Vanilla</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="mochaKahlua" id="mochaKahlua" value="mochaKahlua">
+                            <label for="mochaKahlua">Mocha Kahlua</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="germanChocolate" id="germanChocolate" value="germanChocolate">
+                            <label for="germanChocolate">German Chocolate Cake</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="strawberryDelight" id="strawberryDelight"
+                                value="strawberryDelight">
+                            <label for="strawberryDelight">Strawberry Delight</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="chocolateRaspberry" id="chocolateRaspberry"
+                                value="chocolateRaspberry">
+                            <label for="chocolateRaspberry">Chocolate Raspberry</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="peachesAndCream" id="peachesAndCream" value="peachesAndCream">
+                            <label for="peachesAndCream">Peaches and Cream</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="lemonPoppySeed" id="lemonPoppySeed" value="lemonPoppySeed">
+                            <label for="lemonPoppySeed">Lemon Poppy Seed</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="blackForest" id="blackForest" value="blackForest">
+                            <label for="blackForest">Black Forest Cake</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="vanillaCaramelWalnut" id="vanillaCaramelWalnut"
+                                value="vanillaCaramelWalnut">
+                            <label for="vanillaCaramelWalnut">Vanilla Caramel Walnut</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="tiramisu" id="tiramisu" value="tiramisu">
+                            <label for="tiramisu">Tiramisu</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="earlGrey" id="earlGrey" value="earlGrey">
+                            <label for="earlGrey">Earl Grey</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="ferreoRocher" id="ferreoRocher" value="ferreoRocher">
+                            <label for="ferreoRocher">Ferreo Rocher*</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="oreoCake" id="oreoCake" value="oreoCake">
+                            <label for="oreoCake">Oreo Cake*</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="nanaimo" id="nanaimo" value="nanaimo">
+                            <label for="nanaimo">Nanaimo*</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="appleCake" id="appleCake" value="appleCake">
+                            <label for="appleCake">Apple Cake**</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="dobosTorta" id="dobosTorta" value="dobosTorta">
+                            <label for="dobosTorta">Dobos Torta**</label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" name="japaneseCheesecake" id="japaneseCheesecake"
+                                value="japaneseCheesecake">
+                            <label for="japaneseCheesecake">Japanese Cotton Cheesecake**</label>
+                        </li>
+                    </ul>
+
+                    <p>*Premium Flavours</p>
+                    <p>**Coffee and Dessert Cakes</p>
+                </fieldset>
+            </div>
+
+            <div class="form" id="makeResponsive">
+                <fieldset id="message">
+                    <p>
+                        <label for="message">Please describe additional details of the cake or cupcakes. <br>
+                            Provide the theme and the idea of how you would like it to look. <br>
+                            If you would like figurines or flowers, please let Gisella know if you would like them made
+                            out
+                            of sugar or have real ones. <br>
+                            You may provide example photos once Gisella gets back to you. <br>
+                        </label><br>
+                        <textarea rows="13" cols="100" input class="message"
+                            placeholder="Hello, I'm looking for a lumberjack themed cake for my 1 year old's birthday. I would like the cake to be a lumberjack plaid shirt with suspenders, have a sugar axe on top with the number 1 in black, and have a few sugar trees."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <ul class="sm">
+                <li><a href="https://www.facebook.com/sugarbushdelights"><img src="./images/facebooklogo.png"
+                            alt="Facebook Logo"></a>
+                </li>
+                <li><a href="https://www.instagram.com/sugarbushdelights/"><img src="./images/Instagram_icon.png"
+                            alt="Instagram Logo"></a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; 2022 Shania Muller</p>
+        </div>
+
+        <div>
+            <ul class="info">
+                <li>Gisella Dorner</li>
+                <li>sugarbushdelights@gmail.com</li>
+                <li>(705)-716-8227</li>
+                <li>17 Cherry Trail, Coldwater, ON, Canada</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Alex+Brush&family=Assistant&family=Cormorant+Garamond&family=Cormorant+Upright&family=Italianno&family=Laila&family=Literata:opsz@7..72&family=Lora&family=Parisienne&family=Petit+Formal+Script&family=Pontano+Sans&family=Prata&family=Rochester&family=Tangerine:wght@700&family=Taviraj&display=swap);
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+html,
+body,
+header {
+    height: 120.5%;
+    width: 100%;
+    background-color: rgb(255, 255, 239);
+}
+
+/* Header */
+header {
+    height: 15%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5)), url(../images/didi-miam-6otukgGzRI4-unsplash.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Italianno', cursive;
+    font-size: 100px;
+    text-shadow: 2px 2px rgb(189, 230, 194, 0.8);
+}
+
+/* Nav */
+nav {
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(189, 230, 194);
+    gap: 3em;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+/* Main */
+.form {
+    background-color: rgb(189, 230, 194);
+    margin: 2em 5em 2em 5em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+fieldset div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: 1em;
+}
+
+fieldset img {
+    width: 100px;
+}
+
+fieldset ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset ul li {
+    padding: 1em;
+    width: 120px;
+}
+
+fieldset p {
+    padding: 0.25em;
+    line-height: 1.25em;
+}
+
+fieldset legend {
+    padding: 0.5em;
+}
+
+.title {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#message {
+    width: 70%;
+}
+
+button {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 30px;
+    border-radius: 0.25em;
+    border-color: rgb(12, 114, 99);
+    border-style: solid;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(189, 230, 194);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    margin: 1em;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: right;
+}
+
+.info li {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 0.5em;
+    padding-right: 1em;
+}
+
+footer img {
+    width: 40px;
+}
+
+.sm {
+    display: flex;
+}
+
+.sm li {
+    padding: 1em;
+}
+
+.copyright {
+    font-style: italic;
+    padding-top: 1.8em;
+    padding-left: 1em;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+/* SCREENS 1100px AND DOWN */
+@media screen and (max-width: 1100px) {
+    .form {
+        margin: 2em 3em 3em 2em;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+/* SCREENS 750px AND DOWN */
+@media screen and (max-width: 750px) {
+
+    header {
+        height: 8%;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav:before {
+        content: "MENU";
+        font-family: 'Cormorant Garamond', serif;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        padding: 1em;
+        background-color: rgb(189, 230, 194, 0.8);
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -9999px;
+        gap: 0;
+    }
+
+    nav:hover ul {
+        top: 45px;
+    }
+
+    nav li a {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .form {
+        font-size: 15px;
+    }
+
+    #servingSizes {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    fieldset img {
+        width: 75px;
+    }
+
+    fieldset ul {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #makeResponsive {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info li {
+        font-size: 8px;
+    }
+
+    footer img {
+        width: 20px;
+    }
+
+    .sm li {
+        padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+
+    .copyright {
+        font-size: 8px;
+        padding-top: 1.13em;
+    }
+}
